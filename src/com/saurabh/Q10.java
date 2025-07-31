@@ -58,19 +58,18 @@ public class Q10 {
 			for (int j = 0; j < str[i].length(); j++) {
 				
 	            char ch = str[i].charAt(j);
-	            
+	    
 	            if (ch < '0' || ch > '9') {
 	                flag = false;
 	            }
 	        }
 
 	        if (flag) {
-	            //System.out.println("Integer : " + str[i]);
+	            
 	        	intValues[i] = str[i];
 	        }
 
 		}
-		
 		return intValues;
 	}
 	
@@ -92,7 +91,6 @@ public class Q10 {
 	        }
 
 	        if (!flag) {
-	            //System.out.println("String : " + str[i]);
 	        	stringValues[i] = str[i];
 	        }
 
@@ -116,10 +114,8 @@ public class Q10 {
 	        }
 
 	        if (flag) {
-	            //System.out.println("String : " + str[i]);
 	        	floatValues[i] = str[i];
 	        }
-
 		}
 		return floatValues;
 	}
