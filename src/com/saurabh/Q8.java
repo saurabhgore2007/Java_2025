@@ -18,8 +18,8 @@ import java.util.Scanner;
 public class Q8 {
 
 	public static void main(String[] args) {
-	
-
+		data d= takeConstructionData();
+		submitConstructionData(d);
 	}
 	
 	public static class data {
@@ -37,7 +37,7 @@ public class Q8 {
 
 	}
 
-	public static Object takeConstructionData() {
+	public static data takeConstructionData() {
 		Scanner scan = new Scanner(System.in);
 		
 		String contruction_name;
@@ -57,11 +57,12 @@ public class Q8 {
 		return allData;
 	}
 	
-    public static void submitConstructionData() {
+    public static void submitConstructionData(data d) {
 		
-    	System.out.println("Construction Name : ");
-    	System.out.println("Area in sq.ft : ");
-    	System.out.println("Estimated time in Days : ");
-    	System.out.println("Estimated Cost : $");
+    	System.out.println("\t\t\tDetails of Construction");
+    	System.out.println("Construction Name : "+d.constructionName);
+    	System.out.println("Area in sq.ft : "+d.Area);
+    	System.out.println("Estimated time in Days : "+d.estimateTime);
+    	System.out.println("Estimated Cost : $"+d.estimateCost);
 	}
 }

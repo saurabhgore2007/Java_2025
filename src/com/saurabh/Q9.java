@@ -99,7 +99,6 @@ import java.util.Scanner;
 	             return 101;
 	         }
 	    }
-		boolean isValid = false;
 
 		for(int j=0;j<qualifications.length;j++)
 		{
