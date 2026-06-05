@@ -15,9 +15,10 @@ public class MainApp {
 			allObjects.add(new Document(i+1 , "Doc-"+(i+1),allObjects.size()*4));
 		}
 		allObjects.add(new Document(9 , "Doc-9" , 32.00f));
-		allObjects.add(new Document(9 , "Doc-9" , 32.00f));
-		allObjects.add(new Document(8 , "Doc-8" , 28.00f));
-		allObjects.add(new Document(8 , "Doc-8" , 28.00f));
+		allObjects.add(new Document(7 , "Doc-7" , 24.00f));
+		allObjects.add(new Document(3 , "Doc-3" , 8.00f));
+		allObjects.add(new Document(2 , "Doc-2" , 4.00f));
+		
 		
 		function1(allObjects);
 		List<Document> merged =  function2(allObjects);
